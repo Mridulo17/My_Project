@@ -1,0 +1,1456 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol,li,address,figure,figcaption{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+img{
+    vertical-align: middle;
+}
+.bg{
+    background: #8b7f7f;
+}
+/* common css ends here */
+header .navigation{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 99999999;
+    width: 100%;
+    transition: all linear 0.4s;
+}
+header .navigation.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(56, 50, 50,1);
+    width: 100%;
+}
+header .navigation .navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    margin: 0;
+}
+header .navigation .navbar-light .navbar-nav .nav-link{
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    position: relative;
+}
+header .navigation .navbar-light .navbar-nav .nav-link::after{
+    position: absolute;
+    content: '';
+    width: calc(0% - 40px);
+    height: 2px;
+    background: #fcac45;
+    bottom: 5px;
+    left: 20px;
+    transition: all linear 0.4s;
+}
+header .navigation .navbar-light .navbar-nav .nav-link:hover::after, header .navigation .navbar-light .navbar-nav .nav-link.active::after{
+   width: calc(100% - 40px);
+}
+.banner .first-slide{
+    background: url(../images/COVER1.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner .first-slide .banner-overlay{
+    background: rgba(0, 0, 0,0.7);
+    height: 100vh;
+    position: relative;
+}
+.banner .first-slide .banner-overlay h1{
+    color: #999999;
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+} 
+.banner .first-slide .banner-overlay h1 strong{
+    color: #fcac45;
+    font-weight: 700;
+}
+.banner .first-slide .banner-overlay h2{
+    color: #999999;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.banner .first-slide .banner-overlay h2 span{
+    font-weight: bold;
+    color: #ffffff;
+}
+.banner .first-slide .banner-overlay .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.carousel-indicators{
+    bottom: 30px;
+}
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: #fff;
+}
+.carousel-indicators li.active{
+    background: #fcac45;
+}
+/* header part end */
+#about-part{
+    padding-top: 100px;
+    margin-bottom: 85px;
+}
+#about-part .right h5{
+    color: #636363;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#about-part .right{
+    position: relative;
+}
+#about-part .right h4{
+    color: #222222;
+    font-size: 34px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    padding-left: 5px;
+}
+#about-part .right::after{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 5px;
+    background: #fcac45;
+    top: 90px;
+    left: 15px;
+}
+#about-part .right strong{
+    font-weight: bold;
+}
+#about-part .right p{
+    color: #6c6c6c;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+#about-part .right ol li{
+    color: #5a5a5a;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+#about-part .right ol .s-bld{
+    font-weight: 700;
+}
+#about-part .right ol li .round-btn{
+    width: 15px;
+    height: 15px;
+    background: #5a5a5a;
+    border: 3px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+#about-part .right .bttn{
+    margin-top: 50px;
+}
+#about-part .right .bttn a{
+    border: 1px solid #7f7f7f;
+    color: #616161;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 15px;
+    transition: all linear 0.4s;
+}
+#about-part .right .bttn a i{
+    color: #616161;
+    font-size: 15px;
+    transition: all linear 0.4s;
+}
+#about-part .right .bttn a:hover, #about-part .right .bttn a:hover i{
+    color: #000;
+    background: #f1f1f1f1;
+}
+#about-part .card-header{
+    padding: 0;
+}
+#about-part .btn-link{
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+    padding-left: 20px;
+    line-height: 50px;
+    background: #272727;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+#about-part .btn-link:hover{
+    background: #f0a20d;
+}
+#about-part .btn-link.active{
+    background: #f0a20d;
+}
+#about-part .btn-link i{
+    float: right;
+    line-height: 50px;
+    padding-right: 10px;
+}
+#about-part .btn-link.active i:before{
+    content: "\f068";
+}
+#about-part .card{
+    margin-top: 5px;
+}
+#about-part .card-body{
+    padding: 20px 15px;
+}
+#about-part{}
+/* about-part edns */
+#team-part{
+    background: #070707;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+#team-part h1{
+    color: #ffffff;
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase; 
+}
+#team-part h1 span{
+    font-weight: 700;
+}
+#team-part h1::after{
+    position: absolute;
+    content: '';
+    width: 130px;
+    height: 4px;
+    background: #fcac45;
+    top: 70px;
+    left: 45%; 
+}
+#team-part h1::before{
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 4px;
+    background: #fcac45;
+    top: 80px;
+    left: 46%; 
+}
+/* teampart-end */
+#teampart-details{
+    background: #070707; 
+    padding-bottom: 85px;
+}
+#teampart-details .details img{
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+#teampart-details .details h3{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 8px; 
+}
+#teampart-details .details h4{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#teampart-details .details p{
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+#teampart-details ul li{
+    display: inline-block;
+}
+#teampart-details ul li button{
+    font-size: 0; 
+    height: 12px;
+    width: 12px;
+    margin: 0px 5px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+#teampart-details ul li.slick-active button{
+    background: #fcac45;
+}
+/* team-part details end  */
+#service-part{
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+#service-part h1{
+    color: #222222;
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase; 
+}
+#service-part h1 span{
+    font-weight: 700;
+}
+#service-part h1::after{
+    position: absolute;
+    content: '';
+    width: 130px;
+    height: 4px;
+    background: #fcac45;
+    top: 70px;
+    left: 45%; 
+}
+#service-part h1::before{
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 4px;
+    background: #fcac45;
+    top: 80px;
+    left: 46%; 
+}
+#service-part p{
+    color: #6c6c6c;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 100px;
+}
+#service-part .details{
+    padding-top: 100px;
+}
+#service-part .details i{
+    font-size: 50px;
+    width: 125px;
+    height: 125px;
+    line-height: 125px;
+    border: 5px solid #fcac45;
+    border-radius: 50%;
+    transition: all linear 0.4s;
+}
+#service-part .details i:hover{
+    color: #000;
+    border: 5px solid #000;
+    background: #f8f3f3;
+}
+#service-part .details h5{
+    color: #222222;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+#service-part .details #service-p{
+    margin-top: 0;
+    color: #222222;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+/* service-part end */
+#client-part{
+    background: url(../images/attachment-img.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+#client-part .client-overlay{
+    background: rgba(0, 0, 0,0.85);
+    padding-top: 100px;
+} 
+#client-part h1{
+    color: #ffffff;
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase; 
+}
+#client-part h1 span{
+    font-weight: 700;
+}
+#client-part h1::after{
+    position: absolute;
+    content: '';
+    width: 130px;
+    height: 4px;
+    background: #fcac45;
+    top: 70px;
+    left: 45%; 
+}
+#client-part h1::before{
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 4px;
+    background: #fcac45;
+    top: 80px;
+    left: 46%; 
+}
+#client-part .logos{
+    margin-top: 100px;
+    padding-bottom: 100px; 
+}
+#client-part .logos ul li{
+    display: inline-block;
+    margin-top: 30px;
+}
+#client-part .logos ul li button{
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    color: #fff; 
+}
+.slick-list img{
+    display: inline-block;
+}
+#client-part ul li.slick-active button{
+    background: #fcac45;
+}
+/* client-part end */
+
+#service-part .controller{
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+#service-part .controller{
+    position: relative;
+}
+/*
+#service-part .controller .bton button::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 15px;
+    background: #6c6c6c;
+    right: 0;
+    top: 0;
+}
+#service-part .controller button.last-btn::after{
+    width: 0;
+    height: 0;
+}
+*/
+#service-part .controller h4{
+    color: #222222;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#service-part .controller button.mixitup-control-active{
+    color: #222222;
+}
+#service-part .controller button{
+    border: none;
+    background: none;
+    padding: 0 10px;
+    color: #6c6c6c;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+#service-part .controller button.last-btn{
+    padding-right: 0;
+}
+#service-part .iteam{
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+}
+#service-part .iteam img{
+    display: inline-block;
+}
+#service-part .filter-iteam .iteam .iteam-overlay{
+    background: rgba(0, 0, 0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+#service-part .filter-iteam .iteam:hover .iteam-overlay{
+    opacity: 1;
+}
+#service-part .filter-iteam .iteam-overlay h6{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-top: 60px;
+    text-transform: uppercase;
+}
+#service-part .filter-iteam .iteam-overlay p{
+    color: #b2b2b2;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+#service-part .filter-iteam .iteam-overlay i{
+    color: #e29c41;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #e29c41;
+    border-radius: 50%;
+}
+/* filter-part ends */
+#testimonials-part{
+    background: url(../images/testimonials-back.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+#testimonials-part .testimonial-overlay{
+    background: rgba(0, 0, 0,0.85);
+    padding-top: 100px;
+} 
+#testimonials-part h1{
+    color: #ffffff;
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase; 
+}
+#testimonials-part h1 .thik{
+    font-weight: 300;
+}
+#testimonials-part h1::after{
+    position: absolute;
+    content: '';
+    width: 130px;
+    height: 4px;
+    background: #fcac45;
+    top: 70px;
+    left: 45%; 
+}
+#testimonials-part h1::before{
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 4px;
+    background: #fcac45;
+    top: 80px;
+    left: 46%; 
+}
+#testimonials-part .testimonial-overlay #message{
+    color: #e7e7e7;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 120px;
+    padding-bottom: 45px;
+}
+#testimonials-part .testimonial-overlay #name{
+    color: #b2b2b2;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-bottom: 100px; 
+}
+#testimonials-part .testimonial-overlay .testi .ceo{
+    font-weight: 300;
+}
+#testimonials-part .testimonials ul li{
+    display: inline-block;
+    padding-bottom: 30px;
+}
+#testimonials-part .testimonials ul li button{
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    color: #fff; 
+}
+#testimonials-part ul li.slick-active button{
+    background: #fcac45;
+}
+/*testimonilas end */
+#form-part{
+    background: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+#form-part h1{
+    color: #222222;
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase; 
+}
+#form-part h1 span{
+    font-weight: 700;
+}
+#form-part h1::after{
+    position: absolute;
+    content: '';
+    width: 130px;
+    height: 4px;
+    background: #fcac45;
+    top: 70px;
+    left: 45%; 
+}
+#form-part h1::before{
+    position: absolute;
+    content: '';
+    width: 110px;
+    height: 4px;
+    background: #fcac45;
+    top: 80px;
+    left: 46%; 
+}
+.mr{
+    margin-top: 60px;
+}
+#form-part .form-d b{
+    color: #636363;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+#form-part .form-d{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+#form-part .form-div .form{
+    width: 100%;
+    height: 42px;
+    border: 1px solid #999999;
+    padding: 0 8px;
+    line-height: 42px;
+} 
+#form-part .form-div .text-part{
+    margin-top: 50px;
+} 
+#form-part .form-div .text-part b{
+    color: #636363;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+#form-part .form-div #textarea{
+    width: 100%;
+    resize: none;
+    height: 170px;
+    padding: 0 8px;
+}
+#form-part .form-div .submit a submit{
+    background: #fcac45;
+    padding: 20px 60px 6px 60px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 30px;
+    display: inline-block;
+    border-bottom: 7px solid #d0d0d0;
+} 
+/*f orm-part ends */
+#bottom-line{
+    background: #171717;
+    height: 100PX;
+}
+#bottom-line p{
+    color: #b2b2b2;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 100px;
+}
+#bottom-line p .btm-logo a{
+    color: #ffffff;
+    font-weight: 600;
+}
+#bottom-line .social-link{
+    line-height: 100px;
+}
+#bottom-line .social-link a i{
+    color: #ffffff;
+    width: 33px;
+    height: 33px;
+    background: #000;
+    line-height: 33px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: all linear 0.4s;
+    margin: 0px 2px;
+} 
+#bottom-line .social-link a:hover i{
+    color: #222222;
+    background: #ffffff;
+    border: 2px solid #fcac45;
+}
+/* bottom-line ends */
+
+
+
+@media(min-width: 992px) and (max-width: 1199px){
+    header .navigation .navbar-light .navbar-nav .nav-link{
+        padding: 0px 16px;
+    }
+    #about-part .right h2{
+        font-size: 30px;
+    }
+    #about-part .right p{
+        font-size: 15px;
+        margin-bottom: 23px;
+    }
+    #about-part .right ol li{
+        font-size: 15px;
+    }
+}
+/*large-media ends*/
+@media(min-width: 768px) and (max-width: 991px){
+    header .navigation .navbar-light .navbar-nav .nav-link{
+        padding: 0px 12px;
+    }
+    .banner .first-slide .banner-overlay h2{
+        font-size: 16px;
+    }
+    #about-part .right h2{
+        font-size: 22px;
+    }
+    #about-part .right p{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    #about-part .right ol li{
+        font-size: 11px;
+    }
+    #about-part .right .bttn{
+        margin-top: 35px;
+    }
+    #about-part{
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    #team-part h1{
+        font-size: 33px;
+    }
+    #team-part{
+       padding-top: 50px;
+       padding-bottom: 85px; 
+    }
+    #teampart-details .details h3{
+        font-size: 17px;
+    }
+    #teampart-details .details h4{
+        font-size: 14px;
+    }
+    #teampart-details .details p{
+        font-size: 11px;
+    }
+    #service-part h1{
+        font-size: 33px;
+    }
+    #service-part{
+        padding-top: 50px;
+       padding-bottom: 50px;
+    }
+    #service-part p{
+        font-size: 13px;
+        margin-top: 70px;
+    }
+    #service-part .details{
+        padding-top: 50px;
+    }
+    #service-part .details i {
+        font-size: 40px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+    #service-part .details h5 {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 12px;
+    }
+    #service-part .details #service-p{
+        font-size: 12px;
+    }
+    #client-part .client-overlay{
+        margin-top: 70px;
+    }
+    #client-part h1{
+        font-size: 33px;
+    }
+    #client-part .logos{
+        margin-top: 90px;
+        padding-bottom: 50px;
+    }
+    #service-part{
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+    #service-part .controller h4{
+        font-size: 13px;
+    }
+    #service-part .controller button{
+        font-size: 15px;
+        padding: 0px 8px;
+    }
+    #testimonials-part .testimonial-overlay{
+        padding-top: 52px;
+        padding-bottom: 50px;
+    }
+    #testimonials-part h1{
+        font-size: 33px;
+    }
+    #testimonials-part .testimonial-overlay #message{
+        font-size: 13px;
+        padding-top: 65px;
+        padding-bottom: 30px;
+    }
+    #testimonials-part .testimonial-overlay #name{
+        font-size: 15px;
+        padding-bottom: 25px;
+    }
+    #testimonials-part .testimonials ul li{
+        padding-bottom: 0;
+    }
+    
+    #form-part{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #form-part h1{
+        font-size: 33px;
+    }
+    #form-part #change{
+        font-size: 13px;
+    }
+    #form-part .form-d b{
+        font-size: 12px;
+    }
+    #form-part .form-div .form{
+        height: 35px;
+        line-height: 35px;
+    }
+    #form-part .form-div .text-part b{
+        font-size: 12px;
+    }
+    #form-part .form-div #textarea{
+        height: 120px;
+    }
+    #form-part .form-div .submit a submit {
+        padding: 15px 30px 6px 30px;
+        font-size: 15px;
+    }
+    #bottom-line p{
+        font-size: 13px;
+    }
+    #bottom-line .social-link a i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #service-part .filter-iteam .iteam-overlay h6{
+        font-size: 11px;
+        padding-top: 45px;
+    }
+    #service-part .filter-iteam .iteam-overlay p{
+        font-size: 11px;
+    }
+    #service-part .filter-iteam .iteam-overlay i{
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+}    
+/*medium-media ends    */  
+@media(min-width: 576px) and (max-width: 767px){
+    header .navigation .navbar-light .navbar-nav .nav-link{
+        font-size: 10px;
+        line-height: 50px;
+    }
+    header .navigation .navbar-light .navbar-nav .nav-link{
+        padding: 0 9px;
+    }
+    .banner .first-slide .banner-overlay h1{
+        font-size: 30px;
+    }
+    .banner .first-slide .banner-overlay h2{
+        font-size: 13px;
+    }
+    .carousel-indicators li{
+        width: 15px;
+        height: 15px;
+    }
+    #about-part .right h5{
+        font-size: 16px;
+    }
+    #about-part .right h2{
+        font-size: 15px;
+    }
+    #about-part .right::after {
+        top: 60px;
+        height: 3px;
+    }
+    #about-part .card-header h5 button{
+        padding-left: 0;
+        font-size: 12px;
+    }
+    #about-part .right p{
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+    #about-part{
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    #about-part .right ol li{
+        font-size: 7px;
+    }
+    #about-part .right .bttn a{
+        font-size: 9px;
+        padding: 10px 8px;
+    }
+    #about-part .right .bttn{
+        margin-top: 25px;
+    }
+    .down{
+        margin-top: 57px;
+    }
+    #team-part h1{
+        font-size: 30px;
+    }
+    #team-part{
+        padding-top: 50px;
+        padding-bottom: 85px;
+    }
+    #team-part h1::before {
+        left: 42%;
+    }
+    #team-part h1::after{
+        left: 40%;
+    }
+    #teampart-details .details h3{
+        font-size: 13px;
+    }
+    #teampart-details .details h4{
+        font-size: 10px;
+        margin-bottom: 17px;
+    }
+    #teampart-details .details p{
+        font-size: 10px;
+    }
+    #teampart-details{
+        padding-bottom: 40px;
+    }
+    #teampart-details ul li button{
+        width: 10px;
+        height: 10px;
+    }
+    #service-part{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #service-part h1{
+        font-size: 25px;
+    }
+    #service-part h1::after{
+        left: 40%;
+        }
+    #service-part h1::before{
+        left: 42%;
+    }
+    #service-part p{
+        font-size: 13px;
+        margin-top: 80px;
+    }
+    #service-part .details i{
+        font-size: 40px;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+    #service-part .details{
+        padding-top: 50px;
+    }
+    #service-part .details h5{
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #service-part .details #service-p{
+        font-size: 10px;
+    }
+    #client-part .client-overlay{
+        padding-top: 50px;
+    }
+    #client-part h1{
+        font-size: 30px;
+    }
+    #client-part h1::after{
+        left: 40%;
+    }
+    #client-part h1::before{
+        left: 42%;
+    }
+    #client-part .logos ul li button{
+        width: 10px;
+        height: 10px;
+    }
+    #client-part .logos{
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    #service-part .controller h4{
+        font-size: 8px;
+    }
+    #service-part .controller button{
+        font-size: 8px;
+    }
+    #service-part .filter-iteam .iteam-overlay h6{
+        font-size: 9px;
+        padding-top: 22px;
+    }
+    #service-part .filter-iteam .iteam-overlay p{
+        font-size: 10px;
+        padding-bottom: 8px;
+    }
+    #service-part .filter-iteam .iteam-overlay i{
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+    }
+    #testimonials-part .testimonial-overlay{
+        padding-top: 40px;
+    }
+    #testimonials-part h1{
+        font-size: 28px;
+    }
+    #testimonials-part h1::after{
+        left: 40%;
+    }
+    #testimonials-part h1::before{
+        left: 42%;
+    }
+    #testimonials-part .testimonial-overlay #message{
+        font-size: 11px;
+        padding-top: 80px;
+        padding-bottom: 12px;
+    }
+    #testimonials-part .testimonial-overlay #name{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    #testimonials-part .testimonials ul li button{
+        width: 10px;
+        height: 10px;
+    }
+    #form-part{
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    #form-part h1{
+        font-size: 28px;
+    }
+    #form-part h1::after{
+        left: 40%;
+    }
+    #form-part h1::before{
+        left: 42%;
+    }
+    #change{
+        font-size: 10px;
+    }
+    #form-part .form-d b{
+        font-size: 11px;
+    }
+    #form-part .form-div .form{
+        height: 30px;
+        line-height: 30px;
+    }
+    #form-part .form-div .text-part{
+        margin-top: 15px;
+    }
+    #form-part .form-div .text-part b{
+        font-size: 11px;
+    }
+    #form-part .form-div #textarea{
+        height: 100px;
+    }
+    #form-part .form-div .submit a submit{
+        padding: 10px 10px 6px 10px;
+        font-size: 14px;
+    }
+    #bottom-line p{
+        font-size: 10px;
+        line-height: 60px;
+    }
+    #bottom-line .social-link{
+        line-height: 60px;
+    }
+    #bottom-line .social-link a i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }  
+    #bottom-line{
+        height: 60px;
+    }
+}
+@media(min-width: 320px) and (max-width: 575px){
+    header .navigation .navbar-light .navbar-nav .nav-link{
+        font-size: 15px;
+        line-height: 35px;
+        text-align: center;
+        background: #000;
+    }
+    header .navigation .navbar-light .navbar-nav .nav-link::after{
+        width: 0;
+        height: 0;
+    }
+    .navbar-nav{
+        padding-bottom: 30px;
+        padding-top: 20px;
+        background: #000;
+        border-top: 1px solid rgba(255, 255, 255,0.4);
+    }
+    .banner .first-slide .banner-overlay h1{
+        font-size: 24px;
+    }
+    .banner .first-slide .banner-overlay h2{
+        font-size: 12px;
+        padding-top: 8px;
+    }
+    .carousel-indicators li{
+        width: 10px;
+        height: 10px;
+    }
+    #about-part{
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    #about-part .right h5{
+        font-size: 18px;
+        margin-top: 25px;
+    }
+    #about-part .right h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    #about-part .right p{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    #about-part .right::after{
+        height: 2px;
+    }
+    #about-part .right ol li .round-btn{
+        width: 10px;
+        height: 10px;
+    }
+    #about-part .right ol li{
+        font-size: 12px;
+    }
+    #about-part .right .bttn a{
+        font-size: 10px;
+        padding: 13px 5px;
+    }
+    #about-part .right .bttn a i{
+        font-size: 12px;
+    }
+    #about-part .right .bttn{
+        margin-top: 25px;
+    }
+    #team-part{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    #team-part h1{
+        font-size: 22px;
+    }
+    #team-part h1::after{
+        width: 100px;
+        height: 2px;
+        left: 34%;
+        top: 45px;
+    }
+    #team-part h1::before{
+        width: 85px;
+        height: 2px;
+        left: 36%;
+        top: 52px;
+    }
+    #teampart-details .details h3{
+        font-size: 14px;
+    }
+    #teampart-details .details h4{
+        font-size: 12px;
+    }
+    #teampart-details .details p{
+        font-size: 8px;
+    }
+    
+    #teampart-details .details h4{
+        margin-bottom: 14px;
+    }
+    #teampart-details ul li button{
+        width: 7px;
+        height: 7px;
+        margin: 0px 4px;
+    }
+    #teampart-details{
+        padding-bottom: 25px;
+    }
+    #service-part{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #service-part h1{
+        font-size: 18px;
+    }
+    #service-part h1::after{
+        width: 100px;
+        height: 2px;
+        left: 34%;
+        top: 45px;
+    }
+    #service-part h1::before{
+        width: 85px;
+        height: 2px;
+        left: 36%;
+        top: 52px;
+    }
+    #service-part p{
+        font-size: 7px;
+        margin-top: 50px;
+    }
+    #service-part .details{
+        padding-top: 20px;
+    }
+    #service-part .details i{
+        font-size: 22px;
+        width: 52px;
+        height: 54px;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+    #service-part .details h5{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #service-part .details #service-p{
+        font-size: 9px;
+    }
+    #client-part .client-overlay{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #client-part h1{
+        font-size: 19px;
+    }
+    #client-part h1::after{
+        width: 100px;
+        height: 2px;
+        left: 34%;
+        top: 45px;
+    }
+    #client-part h1::before{
+        width: 85px;
+        height: 2px;
+        left: 36%;
+        top: 52px;
+    }
+    #client-part .logos{
+        margin-top: 50px;
+        padding-bottom: 0px;
+    }
+    #client-part .logos ul li button{
+        width: 7px;
+        height: 7px;
+        margin: 0 4px;
+    }
+    #service-part .controller h4{
+        font-size: 7px;
+        margin-top: 12px;
+    }
+    #service-part .controller button{
+        font-size: 7px;
+    }
+    #service-part .controller{
+        margin-top: 30px;
+    }
+    #service-part .controller .bton button::after{
+        width: 0px;
+        height: 0px;
+    }
+    #service-part .filter-iteam .iteam-overlay h6{
+        font-size: 10px;
+        padding-top: 20px;
+    }
+    #service-part .filter-iteam .iteam-overlay p{
+        font-size: 10px;
+        margin-top: 6px;
+        padding-bottom: 6px;
+    }
+    #service-part .filter-iteam .iteam-overlay i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+    #testimonials-part h1{
+        font-size: 20px;
+    }
+    #testimonials-part .testimonial-overlay{
+        padding-top: 30px;
+    }
+    #testimonials-part h1::after{
+        width: 100px;
+        height: 2px;
+        left: 34%;
+        top: 45px;
+    }
+    #testimonials-part h1::before{
+         width: 85px;
+        height: 2px;
+        left: 36%;
+        top: 52px;
+    }
+    #testimonials-part .testimonial-overlay #message{
+        font-size: 9px;
+        padding-top: 52px;
+        padding-bottom: 10px;
+    }
+    #testimonials-part .testimonial-overlay #name{
+        font-size: 10px;
+        padding-bottom: 0px;
+    }
+    #testimonials-part .testimonials ul li button{
+        width: 7px;
+        height: 7px;
+        margin: 0px 4px;
+    }
+    #form-part h1{
+        font-size: 20px;
+    }
+    #form-part{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #form-part h1::after{
+        width: 100px;
+        height: 2px;
+        left: 34%;
+        top: 45px;
+    }
+    #form-part h1::before{
+        width: 85px;
+        height: 2px;
+        left: 36%;
+        top: 52px;
+    }
+  
+    #form-part #change{
+        font-size: 8px;
+    }
+    #form-part .form-d b{
+        font-size: 7px;
+    }
+    #form-part .form-d{
+        margin-top: 10px;
+    }
+    #form-part .form-div .form{
+        height: 20px;
+        line-height: 20px;
+    }
+    #form-part .form-div .text-part b{
+        font-size: 7px;
+    }
+    #form-part .form-div #textarea{
+        height: 60px;
+    }
+    #form-part .form-div .text-part{
+        margin-top: 0px;
+    }
+    #form-part .form-div .submit a submit{
+        font-size: 9px;
+        margin-top: 10px;
+        padding: 10px 10px 6px 10px;
+        border-bottom: 2px;
+    }
+    #bottom-line p{
+        font-size: 6px;
+        line-height: 40px;
+    }
+    #bottom-line .social-link a i{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    #bottom-line{
+        height: 40px;
+    }
+    #bottom-line .social-link{
+        line-height: 40px;
+    }
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
